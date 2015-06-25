@@ -1,2 +1,13 @@
+<h1 id="title">Judul yang sangat reactive</h1>
 <div id="messages"></div>
 <input id="chat-input" type="text" />
+
+<script id="template">
+  <h1>Hellow, {{title}}</h1>
+</script>
+
+<script id="chat_history">
+  {{#data}}
+  <span>[date]</span><span>{{body}}</span><br>
+  {{/data}}
+</script>
